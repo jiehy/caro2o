@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="caro2o-quartz" />
+        <module name="caro2o-framework" />
+        <module name="caro2o-admin" />
+        <module name="caro2o-common" />
+        <module name="caro2o-system" />
+        <module name="caro2o-business" />
+        <module name="caro2o-generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="caro2o" target="1.8" />
+      <module name="caro2o-admin" target="1.8" />
+      <module name="caro2o-business" target="1.8" />
+      <module name="caro2o-common" target="1.8" />
+      <module name="caro2o-framework" target="1.8" />
+      <module name="caro2o-generator" target="1.8" />
+      <module name="caro2o-quartz" target="1.8" />
+      <module name="caro2o-system" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

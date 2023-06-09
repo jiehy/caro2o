@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.activiti:activiti-image-generator:7.0.0.SR1">
+    <CLASSES>
+      <root url="jar://E:/maven/repository/org/activiti/activiti-image-generator/7.0.0.SR1/activiti-image-generator-7.0.0.SR1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/maven/repository/org/activiti/activiti-image-generator/7.0.0.SR1/activiti-image-generator-7.0.0.SR1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/maven/repository/org/activiti/activiti-image-generator/7.0.0.SR1/activiti-image-generator-7.0.0.SR1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

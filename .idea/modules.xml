@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/caro2o.iml" filepath="$PROJECT_DIR$/caro2o.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin/caro2o-admin.iml" filepath="$PROJECT_DIR$/caro2o-admin/caro2o-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-business/caro2o-business.iml" filepath="$PROJECT_DIR$/caro2o-business/caro2o-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-common/caro2o-common.iml" filepath="$PROJECT_DIR$/caro2o-common/caro2o-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-framework/caro2o-framework.iml" filepath="$PROJECT_DIR$/caro2o-framework/caro2o-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-generator/caro2o-generator.iml" filepath="$PROJECT_DIR$/caro2o-generator/caro2o-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-quartz/caro2o-quartz.iml" filepath="$PROJECT_DIR$/caro2o-quartz/caro2o-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-system/caro2o-system.iml" filepath="$PROJECT_DIR$/caro2o-system/caro2o-system.iml" />
+    </modules>
+  </component>
+</project>

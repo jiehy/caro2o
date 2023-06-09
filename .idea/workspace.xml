@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3683a779-f67d-44b9-ac06-b9b68bbdc1a2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\repository" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.8.1" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.8.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QP1koYGQ91EbUWDCWuosEKf2KU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/caro2o-business/src/main/resources/mapper/report" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.wolfcode.business.appointment.domain.vo" />
+      <recent name="cn.wolfcode.business.report.mapper" />
+      <recent name="cn.wolfcode.business.report.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-business\src\main\resources\mapper\report" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-ui\src\views\business\report" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-ui\src\views\business" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-ui\src\views\business\packageaudit" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-admin\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.wolfcode.business.flowaudit.domain.vo" />
+      <recent name="cn.wolfcode.business.appointment.domain.info" />
+      <recent name="cn.wolfcode.business.appointment.domain.vo" />
+      <recent name="cn.wolfcode.business.appointment.service.impl" />
+      <recent name="cn.wolfcode.business.appointment.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-ui\src\api\business" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-business\src\main\resources\mapper\appointment" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-ui\src\api\business\appointment" />
+      <recent name="E:\code\ idea-workspace\caro2o\caro2o-business\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WolfCodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="caro2o-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.wolfcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.wolfcode.WolfCodeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WolfCodeApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3683a779-f67d-44b9-ac06-b9b68bbdc1a2" name="Default Changelist" comment="" />
+      <created>1685240547274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685240547274</updated>
+      <workItem from="1685240551678" duration="12919000" />
+      <workItem from="1685265791414" duration="12708000" />
+      <workItem from="1685283032248" duration="1077000" />
+      <workItem from="1685284207931" duration="394000" />
+      <workItem from="1685339996366" duration="14203000" />
+      <workItem from="1685403280369" duration="2163000" />
+      <workItem from="1685407726125" duration="2029000" />
+      <workItem from="1685410451134" duration="20017000" />
+      <workItem from="1685487847454" duration="3072000" />
+      <workItem from="1685493489074" duration="10583000" />
+      <workItem from="1685517346137" duration="11114000" />
+      <workItem from="1685951799610" duration="8739000" />
+      <workItem from="1686007830292" duration="1843000" />
+      <workItem from="1686012838927" duration="15944000" />
+      <workItem from="1686106958275" duration="18595000" />
+      <workItem from="1686148927433" duration="64000" />
+      <workItem from="1686149026206" duration="43000" />
+      <workItem from="1686149097590" duration="472000" />
+      <workItem from="1686210039054" duration="812000" />
+      <workItem from="1686210885888" duration="8157000" />
+      <workItem from="1686229966575" duration="9068000" />
+      <workItem from="1686272087371" duration="1975000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="3" key="#Notifications" timestamp="1685530316988">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="3" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1685530316988" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1685255546815">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1685255546815" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1686241777466">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1686241777466" />
+    <state x="177" y="269" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1685502121391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="177" y="269" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1685502121391" />
+    <state x="204" y="0" key="CommitChangelistDialog2" timestamp="1685418452525">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="204" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1685418452525" />
+    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1686149057059">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1686149057059" />
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1686272126099">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1686272126099" />
+    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1686272126099">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1686272126099" />
+    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1686272126099">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1686272126099" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1686272126099">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1686272126099" />
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1686272126099">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1686272126099" />
+    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.2.bottom" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.2.center" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.2.left" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state width="1237" height="221" key="GridCell.Tab.2.right" timestamp="1686272126100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1686272126100" />
+    <state x="221" y="79" key="IDE.errors.dialog" timestamp="1686048365076">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="221" y="79" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1686048365076" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1686149128210">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1686149128210" />
+    <state x="28" y="46" key="new project wizard" timestamp="1685243326412">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="46" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1685243326412" />
+    <state x="563" y="164" width="672" height="678" key="search.everywhere.popup" timestamp="1686109647867">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="563" y="164" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1686109647867" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/caro2o$WolfCodeApplication.ic" NAME="WolfCodeApplication Coverage Results" MODIFIED="1685283932128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cn.wolfcode.*</FILTER>
+    </SUITE>
+  </component>
+</project>
