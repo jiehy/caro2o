@@ -1,5 +1,6 @@
 package cn.wolfcode.business.appointment.mapper;
 
+import java.util.Collection;
 import java.util.List;
 import cn.wolfcode.business.appointment.domain.BusStatement;
 
@@ -58,4 +59,7 @@ public interface BusStatementMapper
      * @return 结果
      */
     public int deleteBusStatementByIds(Long[] ids);
+
+
+    List<BusStatement> selectBusStatementByPhone(String phone);
 }

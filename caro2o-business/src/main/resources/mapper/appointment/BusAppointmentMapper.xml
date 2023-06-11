@@ -41,6 +41,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectBusAppointmentVo"/>
         where id = #{id}
     </select>
+
+    <select id="selectBusAppointmentByPhone" parameterType="String" resultMap="BusAppointmentResult">
+        <include refid="selectBusAppointmentVo"/>
+        where customer_phone = #{customerPhone}
+    </select>
         
     <insert id="insertBusAppointment" parameterType="BusAppointment" useGeneratedKeys="true" keyProperty="id">
         insert into bus_appointment
