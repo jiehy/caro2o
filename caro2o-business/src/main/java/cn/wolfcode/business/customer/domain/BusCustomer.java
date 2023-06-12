@@ -41,7 +41,17 @@ public class BusCustomer extends BaseEntity
     @Excel(name = "录入时间", width = 30, dateFormat = "yyyy-MM-dd")
     private Date enterTime;
 
-    public void setId(Long id) 
+    private String keyWord;
+
+    public String getKeyWord() {
+        return keyWord;
+    }
+
+    public void setKeyWord(String keyWord) {
+        this.keyWord = keyWord;
+    }
+
+    public void setId(Long id)
     {
         this.id = id;
     }

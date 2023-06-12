@@ -17,6 +17,8 @@ import cn.wolfcode.common.core.domain.BaseEntity;
 public class BusStatement extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
+    public static final Integer STATUS_CONSUME = 0;
+    public static final Integer STATUS_PAID = 1;
 
     /** $column.columnComment */
     private Long id;

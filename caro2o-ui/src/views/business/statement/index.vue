@@ -67,9 +67,8 @@
           <el-button
             size="mini"
             type="text"
-            icon="el-icon-delete"
-            @click="handleDelete(scope.row)"
-            v-hasPermi="['business:statement:remove']"
+            icon="el-icon-view"
+            @click="handleDetail(scope.row)"
           >明细</el-button>
           <el-button
             size="mini"
@@ -117,7 +116,7 @@
           <el-input v-model="form.carSeries" placeholder="请输入汽车类型" />
         </el-form-item>
         <el-form-item label="备注信息" prop="info">
-          <el-input v-model="form.info" placeholder="请输入备注信息" />
+          <el-input  type="textarea" v-model="form.info" placeholder="请输入备注信息" />
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -289,6 +288,13 @@ export default {
       this.download('business/statement/export', {
         ...this.queryParams
       }, `statement_${new Date().getTime()}.xlsx`)
+    },
+    /** 明细页面操作 */
+    handleDetail(row){
+      const id =row.id;
+      this.$router.push({
+        path:"/business/statement/item",query:{id}
+      });
     }
   }
 };

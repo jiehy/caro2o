@@ -29,6 +29,8 @@ import cn.wolfcode.business.appointment.domain.BusServiceItem;
 import cn.wolfcode.business.appointment.service.IBusServiceItemService;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.management.RuntimeMBeanException;
+
 /**
  * 服务项Service业务层处理
  * 
@@ -218,6 +220,24 @@ public class BusServiceItemServiceImpl implements IBusServiceItemService
         busCarPackageAuditMapper.insertBusCarPackageAudit(carPackageAudit);
         //服务单项表的状态则修改为审核中
         busServiceItemMapper.changeStatus(auditVo.getId(),BusServiceItem.AUDITSTATUS_AUDITING);
+    }
+
+    @Override
+    public int updateBusServiceItemStatus(Long id) {
+        Assert.notNull(id,"参数不合法");
+        BusServiceItem busServiceItem = busServiceItemMapper.selectBusServiceItemById(id);
+        Assert.notNull(busServiceItem,"查询的数据为空");
+        if (busServiceItem.getSaleStatus().equals(BusServiceItem.SALESTATUS_ON)) {
+            busServiceItem.setSaleStatus(BusServiceItem.SALESTATUS_OFF);
+            return  busServiceItemMapper.updateBusServiceItem(busServiceItem);//只有为上架状态可以下架
+        }else if (busServiceItem.getAuditStatus().equals(BusServiceItem.AUDITSTATUS_APPROVED) ||
+        busServiceItem.getAuditStatus().equals(BusServiceItem.AUDITSTATUS_NO_REQUIRED)) {
+            busServiceItem.setSaleStatus(BusServiceItem.SALESTATUS_ON);
+            return busServiceItemMapper.updateBusServiceItem(busServiceItem);//上架
+        }else {
+            throw new RuntimeException("状态必须为审核通过或无需审核才可以上下架");
+        }
+
     }
 }
 /**总结与分析

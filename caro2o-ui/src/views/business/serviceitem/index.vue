@@ -10,36 +10,40 @@
         />
       </el-form-item>
       <el-form-item label="是否套餐" prop="carPackage">
-        <el-input
-          v-model="queryParams.carPackage"
-          placeholder="请输入是否套餐"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
+        <el-select v-model="queryParams.carPackage" placeholder="所有" clearable>
+          <el-option
+            v-for="dict in dict.type.package_or_not"
+            :key="dict.value"
+            :label="dict.label"
+            :value="dict.value"/>
+        </el-select>
       </el-form-item>
       <el-form-item label="服务分类" prop="serviceCatalog">
-        <el-input
-          v-model="queryParams.serviceCatalog"
-          placeholder="请输入服务分类"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
+        <el-select v-model="queryParams.serviceCatalog" placeholder="所有" clearable>
+          <el-option
+            v-for="dict in dict.type.service_type"
+            :key="dict.value"
+            :label="dict.label"
+            :value="dict.value"/>
+        </el-select>
       </el-form-item>
-      <el-form-item label="审核状态" prop="serviceCatalog">
-        <el-input
-          v-model="queryParams.serviceCatalog"
-          placeholder="请输入服务分类"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
+      <el-form-item label="审核状态" prop="auditStatus">
+        <el-select v-model="queryParams.auditStatus" placeholder="所有" clearable>
+          <el-option
+            v-for="dict in dict.type.audit_status"
+            :key="dict.value"
+            :label="dict.label"
+            :value="dict.value"/>
+        </el-select>
       </el-form-item>
-      <el-form-item label="上架状态" prop="serviceCatalog">
-        <el-input
-          v-model="queryParams.serviceCatalog"
-          placeholder="请输入服务分类"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
+      <el-form-item label="上架状态" prop="saleStatus">
+        <el-select v-model="queryParams.saleStatus" placeholder="所有" clearable>
+          <el-option
+            v-for="dict in dict.type.listing_status"
+            :key="dict.value"
+            :label="dict.label"
+            :value="dict.value"/>
+        </el-select>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
@@ -112,16 +116,16 @@
             size="mini"
             type="text"
             icon="el-icon-s-goods"
-            @click="handleDelete(scope.row)"
-            v-hasPermi="['business:serviceitem:remove']"
+            @click="handleOnshelf(scope.row)"
+            v-hasPermi="['business:serviceitem:onshelf']"
             v-if="scope.row.saleStatus == 0"
           >上架</el-button>
           <el-button
             size="mini"
             type="text"
             icon="el-icon-goods"
-            @click="handleDelete(scope.row)"
-            v-hasPermi="['business:serviceitem:remove']"
+            @click="handleOffshelf(scope.row)"
+            v-hasPermi="['business:serviceitem:offshelf']"
             v-if="scope.row.saleStatus == 1"
           >下架</el-button>
         </template>
@@ -148,13 +152,12 @@
         <el-form-item label="折扣价" prop="discountPrice">
           <el-input v-model="form.discountPrice" placeholder="请输入服务项折扣价" />
         </el-form-item>
-        <el-form-item label="是否套餐" prop="carPackage">
+        <el-form-item label="是否套餐" prop="carPackage" v-if="form.carPackage == null">
           <el-radio-group v-model="form.carPackage">
             <el-radio
               v-for="dict in dict.type.package_or_not"
               :key="dict.value"
-              :label="dict.value"
-            >{{ dict.label }}</el-radio>
+              :label="parseInt(dict.value)">{{dict.label}}</el-radio>
           </el-radio-group>
         </el-form-item>
         <el-form-item label="服务分类" prop="serviceCatalog">
@@ -223,7 +226,7 @@
 </template>
 
 <script>
-import { listServiceitem, getServiceitem, delServiceitem, addServiceitem, updateServiceitem,serviceItemAuditInfo,
+import { listServiceitem, getServiceitem, OnshelfServiceitem,OffshelfServiceitem, addServiceitem, updateServiceitem,serviceItemAuditInfo,
   serviceItemStartAudit } from "@/api/business/serviceitem";
 
 export default {
@@ -444,14 +447,24 @@ export default {
         }
       });
     },
-    /** 删除按钮操作 */
-    handleDelete(row) {
+    /** 上架按钮操作 */
+    handleOnshelf(row) {
       const ids = row.id || this.ids;
-      this.$modal.confirm('是否确认删除服务项编号为"' + ids + '"的数据项？').then(function() {
-        return delServiceitem(ids);
+      this.$modal.confirm('是否确认上架服务项编号为"' + ids + '"的数据项？').then(function() {
+        return OnshelfServiceitem(ids);
       }).then(() => {
         this.getList();
-        this.$modal.msgSuccess("删除成功");
+        this.$modal.msgSuccess("上架成功");
+      }).catch(() => {});
+    },
+    /** 下架按钮操作 */
+    handleOffshelf(row) {
+      const ids = row.id || this.ids;
+      this.$modal.confirm('是否确认下架服务项编号为"' + ids + '"的数据项？').then(function() {
+        return OffshelfServiceitem(ids);
+      }).then(() => {
+        this.getList();
+        this.$modal.msgSuccess("下架成功");
       }).catch(() => {});
     },
     /** 导出按钮操作 */

@@ -35,11 +35,19 @@ export function updateServiceitem(data) {
   })
 }
 
-// 删除服务项
-export function delServiceitem(id) {
+// 上架服务项
+export function OnshelfServiceitem(id) {
   return request({
-    url: '/business/serviceitem/' + id,
-    method: 'delete'
+    url: `/business/serviceitem/onshelf/${id}`,
+    method: 'put'
+  })
+}
+
+// 下架服务项
+export function OffshelfServiceitem(id) {
+  return request({
+    url: `/business/serviceitem/offshelf/${id}`,
+    method: 'put'
   })
 }
 //发起审核按钮操作

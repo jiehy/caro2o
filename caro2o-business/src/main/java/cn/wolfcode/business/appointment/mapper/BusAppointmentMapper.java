@@ -79,4 +79,6 @@ public interface BusAppointmentMapper
     public int cancel(@Param("id") Long id, @Param("status") Integer status);
 
     List<BusAppointment> selectBusAppointmentByPhone(String phone);
+
+    void updatePayStatus(@Param("id") Long id, @Param("status") Integer status);
 }

@@ -87,6 +87,18 @@ export const constantRoutes = [
         meta: { title: '个人中心', icon: 'user' }
       }
     ]
+  },
+  {
+    path: '/business',
+    component: Layout,
+    hidden: true,
+    redirect: 'noredirect',
+    children: [
+      {
+        path: 'statement/item',
+        component: () => import('@/views/business/statement/item')
+      }
+    ]
   }
 ]
 
@@ -162,18 +174,6 @@ export const dynamicRoutes = [
       }
     ]
   },
-  {
-    path: '/business',
-    component: Layout,
-    hidden: true,
-    redirect: 'noredirect',
-    children: [
-      {
-        path: 'statement/item',
-        component: () => import('@/views/business/statement/item')
-      }
-    ]
-  }
 ]
 
 // 防止连续点击多次路由报错

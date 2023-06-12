@@ -156,7 +156,7 @@
                   <el-form-item label="是否套餐：">
                     <el-select v-model="queryParams.carPackage" clearable>
                       <el-option
-                        v-for="dict in dict.type.service_item_car_package"
+                        v-for="dict in dict.type.package_or_not"
                         :key="dict.value"
                         :label="dict.label"
                         :value="dict.value"
@@ -217,12 +217,12 @@
   </div>
 </template>
 <script>
-  // import { getStatement } from "@/api/business/statement";
-  // import { addStatementItem,listStatementItem,payStatement} from "@/api/business/statementItem";
-  // import { listServiceItem } from "@/api/business/serviceItem";
+  import { getStatement } from "@/api/business/statement";
+  import { addStatementItem,listStatementItem,payStatement} from "@/api/business/statementItem";
+  import { listServiceitem } from "@/api/business/serviceitem";
   export default {
     name: "StatementItem",
-    dicts: ["service_type", "service_item_car_package"],
+    dicts: ["service_type", "package_or_not"],
     data() {
       return {
         //优惠价格
@@ -256,13 +256,11 @@
     },
     created() {
       this.getDetail();
-
     },
     methods: {
       getDetail() {
-
         // 获取服务单项列表
-        listServiceItem(this.queryParams).then((response) => {
+        listServiceitem(this.queryParams).then((response) => {
           this.serviceItemList = response.rows;
         });
         // 消费列表
@@ -274,6 +272,7 @@
         getStatement(this.id).then((response) => {
           this.discountAmount = response.data.discountAmount;
           this.customer = response.data;
+          this.customer.status = parseInt(response.data.status)
           //处理服务类类型显示问题
           // this.customer.serviceCatalog=this.customer.serviceCatalog.toString();
         });
@@ -281,7 +280,7 @@
       //搜索按钮
       search() {
         // 获取服务单项列表
-        listServiceItem(this.queryParams).then((response) => {
+        listServiceitem(this.queryParams).then((response) => {
           this.serviceItemList = response.rows;
         });
       },

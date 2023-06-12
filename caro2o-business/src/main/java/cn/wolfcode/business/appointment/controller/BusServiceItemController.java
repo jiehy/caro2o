@@ -84,14 +84,25 @@ public class BusServiceItemController extends BaseController
     }
 
     /**
-     * 修改服务项
+     * 上架服务项
      */
-    @PreAuthorize("@ss.hasPermi('business:serviceitem:edit')")
-    @Log(title = "服务项", businessType = BusinessType.UPDATE)
-    @PutMapping
-    public AjaxResult edit(@RequestBody BusServiceItem busServiceItem)
+    @PreAuthorize("@ss.hasPermi('business:serviceitem:onshelf')")
+    @Log(title = "上架", businessType = BusinessType.UPDATE)
+    @PutMapping("/onshelf/{id}")
+    public AjaxResult OnShelf(@PathVariable Long id)
     {
-        return toAjax(busServiceItemService.updateBusServiceItem(busServiceItem));
+        return toAjax(busServiceItemService.updateBusServiceItemStatus(id));
+    }
+
+    /**
+     * 下架服务项
+     */
+    @PreAuthorize("@ss.hasPermi('business:serviceitem:offshelf')")
+    @Log(title = "上架", businessType = BusinessType.UPDATE)
+    @PutMapping("/offshelf/{id}")
+    public AjaxResult OffShelf(@PathVariable Long id)
+    {
+        return toAjax(busServiceItemService.updateBusServiceItemStatus(id));
     }
 
     /**
@@ -103,6 +114,17 @@ public class BusServiceItemController extends BaseController
     public AjaxResult remove(@PathVariable Long[] ids)
     {
         return toAjax(busServiceItemService.deleteBusServiceItemByIds(ids));
+    }
+
+    /**
+     * 修改服务项
+     */
+    @PreAuthorize("@ss.hasPermi('business:serviceitem:edit')")
+    @Log(title = "服务项", businessType = BusinessType.UPDATE)
+    @PutMapping
+    public AjaxResult edit(@RequestBody BusServiceItem busServiceItem)
+    {
+        return toAjax(busServiceItemService.updateBusServiceItem(busServiceItem));
     }
 
     @GetMapping("/audit/{id}")

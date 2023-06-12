@@ -64,4 +64,6 @@ public interface IBusServiceItemService
     ServiceItemAuditInfo auditInfo(Long id);
 
     void startAudit(ServiceItemAuditVo auditVo);
+
+    int updateBusServiceItemStatus(Long id);
 }

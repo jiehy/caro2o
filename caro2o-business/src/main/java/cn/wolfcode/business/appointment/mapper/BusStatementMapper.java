@@ -3,6 +3,8 @@ package cn.wolfcode.business.appointment.mapper;
 import java.util.Collection;
 import java.util.List;
 import cn.wolfcode.business.appointment.domain.BusStatement;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.security.core.parameters.P;
 
 /**
  * 结算单Mapper接口
@@ -62,4 +64,6 @@ public interface BusStatementMapper
 
 
     List<BusStatement> selectBusStatementByPhone(String phone);
+
+    void updatePayStatus(@Param("id") Long id, @Param("payeeId") Long payeeId, @Param("status") Integer status);
 }

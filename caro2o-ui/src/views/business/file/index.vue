@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <el-form :model="queryParams" ref="queryForm" size="small" :inline="true" v-show="showSearch" label-width="68px">
-      <el-form-item label="关键字" prop="${customerName} or ${phone}">
+      <el-form-item label="关键字" prop="${customerName}">
         <el-input
           v-model="queryParams.customerName || queryParams.phone"
           placeholder="客户姓名/电话"
@@ -161,7 +161,8 @@ export default {
         customerName: null,
         phone: null,
         enterMan: null,
-        enterTime: null
+        enterTime: null,
+        keyWord: null
       },
       // 表单参数
       form: {},
